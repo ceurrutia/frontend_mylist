@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+:root {
+  --primary-blue: #2b7d9e; 
+  --secondary-blue: #07152c; 
+  --highlight-green: #0c5a40; 
+  --light-green: #D1FAE5; 
+  --light-blue: #c7c7c7; 
+  --background-color: #fdfdfd; 
+  --white: #FFFFFF;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Funnel Display', Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-blue);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+header {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+.place-list {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+
+.place-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+/*movimineto de la card arriba 10px*/
+.place-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.place-card h3 {
+  font-size: 1.6rem;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+.place-card p {
+  font-size: 0.9rem;
+  color: var(--primary-blue);
+  margin: 5px 0;
+}
+
+.place-card p strong {
+  color: var(--highlight-green);
+}
+
+
+.place-list p {
+  font-size: 1rem;
+  color: var(--secondary-blue);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-h2{
+  width:100%;
+
+}
+
+/* Botones */
+button {
+  background-color: var(--secondary-blue);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--highlight-green);
+}
+
+
+
